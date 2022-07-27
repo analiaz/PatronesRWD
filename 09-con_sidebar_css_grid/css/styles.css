@@ -47,4 +47,13 @@ p {
     text-transform: uppercase;
 }
 
-/** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .con-sidebar {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 4rem;
+        grid-auto-flow: colum; /* acomoda en columnas */
+    }
+    aside {
+        grid-column: 2/3; /*explicito desde que columna a que columna quiero que se muestre el contenido */
+    }
