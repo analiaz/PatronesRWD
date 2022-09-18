@@ -37,3 +37,27 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+.contenedor {
+    max-width: 120rem; 
+    width: 95%; /*siempre en % asi fluye*/
+    margin: 0 auto; /* 0 arriba abajo izq y de en automatico */
+}
+
+.img {
+    max-width: 100%; /*se adapta a la pantalla pero si es pequeña la imagen no la fuerza a crecer*/
+}
+
+/*EXTRA*/
+
+@media (min-width:768px) {
+    .contenedor {
+        width: 80%;
+    }
+}
+
+@media (min-width:992px) {
+    .contenedor {
+        width: 60%;
+    }    
+}
